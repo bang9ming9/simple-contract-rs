@@ -1,0 +1,14 @@
+[package]
+name = "test_optimism"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy = { git = "https://github.com/alloy-rs/alloy", features = ["full"] }
+async-std = "1.13.0"
+eyre = "0.6.12"
+tokio = { version =  "1.41.1", features = ["full"] }
+serde = { version = "1.0.215", features = ["derive"] }
+toml = "0.8.19"
+felix_contracts = { path = "../erc20-contracts/out/bindings" }
+rust_decimal = "1.36.0"
